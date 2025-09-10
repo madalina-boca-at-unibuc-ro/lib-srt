@@ -1,0 +1,94 @@
+# Build directories
+build/
+out/
+cmake-build-*/
+
+# Compiled binaries
+*.exe
+*.out
+*.app
+example
+test_runner
+
+# Object files
+*.o
+*.obj
+*.lo
+*.slo
+*.ko
+*.elf
+
+# Libraries
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Package managers
+conan.lock
+vcpkg_installed/
+
+# Documentation build
+docs/_build/
+site/
+
+# Test coverage
+*.gcov
+*.gcda
+*.gcno
+coverage/
+*.info
+
+# Profiling
+*.prof
+gmon.out
+callgrind.out.*
+cachegrind.out.*
+massif.out.*
+
+# Backup files
+*.bak
+*.backup
+*.orig
