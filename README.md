@@ -30,6 +30,30 @@ After building, you can run:
 - **Example program**: `./build/example`
 - **Tests**: `./build/test_runner`
 
+## Compiling the Example Usage
+
+The `example_usage/` directory shows how to use the library as a dependency. Here are two ways to compile it:
+
+### Option 1: Direct Compilation (Simplest)
+```bash
+g++ -std=c++20 -Iinclude -o example_usage_simple example_usage/main.cpp
+./example_usage_simple
+```
+
+### Option 2: Using CMake (Recommended for larger projects)
+```bash
+# First install the library
+cd build
+cmake --install . --prefix /tmp/srt_local/
+
+# Then compile the example
+cd ../example_usage
+mkdir build && cd build
+cmake .. -DCMAKE_PREFIX_PATH=/tmp/srt_local/
+make
+./usage_example
+```
+
 ## Using as a dependency
 
 This library can be used as a CMake dependency:
